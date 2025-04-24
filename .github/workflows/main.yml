@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         # Imposta questa variabile a "false" per far fallire il test
-        VITE_FAIL_TEST_ACTIVE: ${{ secrets.VITE_FAIL_TEST_ACTIVE }}
+        VITE_FAIL_TEST: ${{ secrets.FAIL_TEST }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
